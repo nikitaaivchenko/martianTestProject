@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: #e4edf4;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Header Style */
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    width: 100%;
+    background: #6FCDFF;
+}
+
+.logo {
+    width: calc((100vw - 1200px) / 2 + 6px);
+    min-height: 137px;
+    background: #51AFE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.addFilm {
+    display: flex;
+    align-items: center;
+    min-width: 1200px;
+    padding: 0 0 0 98px;
+}
+
+.addFilm span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #51AFE1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.addFilm a {
+    font-size: 16px;
+    margin: 0 0 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Main Style */
+
+.container {
+    margin: 0 auto;
+    max-width: 1171px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 82px 107px;
+}
+
+.martian {
+    background: url('../img/martian_bg.png'), no-repeat;
+    background-size: 110%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.martian:last-child {
+    margin-bottom: 50px;
+}
+
+.martian_img {
+    width: 311px;
+    height: 443px;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+
+.martian_text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 53px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.martian_text p {
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.film_descriprion {
+    display: flex;
+}
+
+.film_descriprion li {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.uppercase {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+
+.comments {
+    background: #fff;
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 98px;
+    border-radius: 0 0 15px 15px;
+}
+
+.martian_inputs input {
+    font-family: OpenSans;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.martian_inputs input:first-child {
+    width: 140px;
+    height: 40px;
+    background-color: #ff7e70;
+    border: 1px solid #ff695a;
+    border-radius: 20px;
+}
+
+.martian_inputs input:last-child {
+    width: 140px;
+    height: 40px;
+    background-color: #6ecdfd;
+    border: 1px solid #2fa5e1;
+    border-radius: 20px;
+}
+
+.comments {
+    display: block;
+    padding: 50px 107px;
+}
+
+.comments input[type="button"] {
+    font-family: OpenSans;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    color: #ff7e70;
+    background: none;
+    border: none;
+}
+
+.comments input[type="text"] {
+    width: 100%;
+    padding: 12px 5px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    background-color: #6ecdfd;
+    border: 1px solid #2fa5e1;
+    border-radius: 20px;
+}
+
+.comment p {
+    position: relative;
+    font-size: 16px;
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.comment p::before {
+    content: "";
+    width: 100%;
+    border: 2px solid #e4edf4;
+    position: absolute;
+    top: 28px;
+}
+
+.comment p::after {
+    content: "";
+    width: 100%;
+    border: 2px solid #e4edf4;
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+}
+
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 107px;
+}
+
+.new_film_form {
+    background: #fff;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+}
+
+form input {
+    width: 50%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form label {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#description {
+    width: 50%;
+    min-height: 100px;
+    margin: 8px 0;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: none;
+}
