@@ -163,6 +163,7 @@ header {
 }
 
 .addFilm {
+    cursor: pointer;
     display: flex;
     align-items: center;
     min-width: 1200px;
@@ -182,7 +183,9 @@ header {
     font-weight: bold;
 }
 
-.addFilm a {
+.btn {
+    background: none;
+    border: none;
     font-size: 16px;
     margin: 0 0 0 15px;
     text-decoration: none;
@@ -393,4 +396,12 @@ form label {
     box-sizing: border-box;
     overflow: hidden;
     resize: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }

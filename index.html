@@ -18,12 +18,12 @@
         </div>
         <div class="addFilm">
             <span>+</span>
-            <a href="#">Add new film</a>
+            <button class="btn">Add new film</button>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="new_film_form">
+            <div class="new_film_form hide">
                 <form action="">
                     <form>
                         <label for="title">
@@ -45,8 +45,8 @@
                             description<br/> <textarea id="description"></textarea>
                           </label>
                         <div class="martian_inputs">
-                            <input type="button" value="Cancel">
-                            <input type="submit" value="Add">
+                            <input type="button" value="Cancel" id="cancelAdd">
+                            <input type="submit" value="Add" id="addForm">
                         </div>
                     </form>
                 </form>
@@ -78,13 +78,15 @@
                     </div>
                 </div>
                 <div class="comments">
-                    <input type="button" value="Comments: 3 ^">
-                    <div class="comment">
-                        <p>Test comment 1</p>
-                        <p>Test comment 2</p>
+                    <input type="button" class="comment_btn" value="Comments: 3 ^">
+                    <div class="comment_hidden">
+                        <div class="comment">
+                            <p>Test comment 1</p>
+                            <p>Test comment 2</p>
+                        </div>
+                        <input type="text" name="comment" placeholder="Add your comment">
+                        <input type="submit" value="Add">
                     </div>
-                    <input type="text" name="comment" id="comment" placeholder="Add your comment">
-                    <input type="submit" value="Add">
                 </div>
             </div>
             <div class="martian">
@@ -114,11 +116,18 @@
                     </div>
                 </div>
                 <div class="comments">
-                    <input type="button" value="Comments: 3 ^">
+                    <input type="button" class="comment_btn" value="Comments: 3 ^">
+                    <div class="comment">
+                        <p>Test comment 1</p>
+                        <p>Test comment 2</p>
+                    </div>
+                    <input type="text" name="comment" placeholder="Add your comment">
+                    <input type="submit" value="Add">
                 </div>
             </div>
         </div>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
