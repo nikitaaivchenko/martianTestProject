@@ -16,113 +16,122 @@
         <div class="logo">
             <a href="#">Films library</a>
         </div>
-        <div class="addFilm">
+        <div class="addFilm__button">
             <span>+</span>
             <button class="btn">Add new film</button>
         </div>
     </header>
     <main>
         <div class="container">
-            <div class="new_film_form hide">
-                <form action="">
-                    <form>
-                        <label for="title">
+            <div class="addFilm__form hide">
+                <form>
+                    <label for="title__input">
                             title<br/> <input type="text" id="title" name="title">
                           </label>
-                        <label for="year">
+                    <label for="year__input">
                             year<br/> <input type="text" id="year" name="year">
                           </label>
-                        <label for="country">
+                    <label for="country__input">
                             country<br/> <input type="text" id="country" name="country">
                           </label>
-                        <label for="genre">
+                    <label for="genre__input">
                             genre<br/> <input type="text" id="genre" name="genre">
                           </label>
-                        <label for="poster">
+                    <label for="poster__input">
                             poster(link)<br/> <input type="text" id="poster" name="poster">
                           </label>
-                        <label for="description">
-                            description<br/> <textarea id="description"></textarea>
+                    <label for="description__input">
+                            description<br/> <textarea id="description__input" name="description"></textarea>
                           </label>
-                        <div class="martian_inputs">
-                            <input type="button" value="Cancel" id="cancelAdd">
-                            <input type="submit" value="Add" id="addForm">
-                        </div>
-                    </form>
+                    <div class="film-card__inputs">
+                        <input type="button" value="Cancel" id="cancelAdd">
+                        <input type="submit" value="Add" id="addForm">
+                    </div>
                 </form>
             </div>
-            <div class="martian">
-                <div class="section">
-                    <div class="martian_img"><img src="img/Martian.png" alt="Martian"></div>
-                    <div class="martian_text">
-                        <h1>Martian</h1>
-                        <p>Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission,considering him dead...</p>
-                        <div class="film_descriprion">
-                            <ul class="uppercase">
-                                <li>country</li>
-                                <li>year</li>
-                                <li>genre</li>
-                                <li>actors</li>
-                            </ul>
-                            <ul>
-                                <li>USA</li>
-                                <li>2016</li>
-                                <li>Fantasy</li>
-                                <li>Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</li>
-                            </ul>
+            <div class="film-cards__wrapper">
+                <div class="film-card">
+                    <div class="section">
+                        <div class="film-card_img"><img src="img/Martian.png" alt="Martian"></div>
+                        <div class="film-card_text">
+                            <h1>Martian</h1>
+                            <!-- <input type="text" name="" id=""> -->
+                            <p>Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission,considering him dead...</p>
+                            <!-- <input type="text" name="" id=""> -->
+                            <div class="film_descriprion">
+                                <ul class="uppercase">
+                                    <li>country</li>
+                                    <li>year</li>
+                                    <li>genre</li>
+                                    <li>actors</li>
+                                </ul>
+                                <ul>
+                                    <li>USA</li>
+                                    <!-- <input type="text" name="" id=""> -->
+                                    <li>2016</li>
+                                    <!-- <input type="text" name="" id=""> -->
+                                    <li>Fantasy</li>
+                                    <!-- <input type="text" name="" id=""> -->
+                                    <li>Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</li>
+                                </ul>
+                            </div>
+                            <div class="film-card__inputs">
+                                <input type="button" value="Delete" class="delete">
+                                <input type="button" value="Edit" class="edit">
+                            </div>
                         </div>
-                        <div class="martian_inputs">
-                            <input type="button" value="Delete">
-                            <input type="button" value="Edit">
+                    </div>
+                    <div class="comments">
+                        <input type="button" class="comment_btn" value="Comments: 3 ^">
+                        <div class="comment_block hide">
+                            <div class="comment">
+                                <p>Test comment 1</p>
+                                <p>Test comment 2</p>
+                            </div>
+                            <form class="comment-form">
+                                <input type="text" name="comment" placeholder="Add your comment" class="add-comment__text">
+                                <input type="submit" value="Add" class="add-comment__btn">
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="comments">
-                    <input type="button" class="comment_btn" value="Comments: 3 ^">
-                    <div class="comment_hidden">
-                        <div class="comment">
-                            <p>Test comment 1</p>
-                            <p>Test comment 2</p>
-                        </div>
-                        <input type="text" name="comment" placeholder="Add your comment">
-                        <input type="submit" value="Add">
-                    </div>
-                </div>
-            </div>
-            <div class="martian">
-                <div class="section">
-                    <div class="martian_img"><img src="img/Martian.png" alt="Martian"></div>
-                    <div class="martian_text">
-                        <h1>Martian</h1>
-                        <p>Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission,considering him dead...</p>
-                        <div class="film_descriprion">
-                            <ul class="uppercase">
-                                <li>country</li>
-                                <li>year</li>
-                                <li>genre</li>
-                                <li>actors</li>
-                            </ul>
-                            <ul>
-                                <li>USA</li>
-                                <li>2016</li>
-                                <li>Fantasy</li>
-                                <li>Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</li>
-                            </ul>
-                        </div>
-                        <div class="martian_inputs">
-                            <input type="button" value="Delete">
-                            <input type="button" value="Edit">
+                <div class="film-card">
+                    <div class="section">
+                        <div class="film-card_img"><img src="img/Martian.png" alt="Martian"></div>
+                        <div class="film-card_text">
+                            <h1>Martian</h1>
+                            <p>Mars mission Ares-2 in the process was forced to urgently leave the planet because of the impending sandstorm. Engineer and Biolog mark Watney suffered an injury suit during a sand storm. The mission,considering him dead...</p>
+                            <div class="film_descriprion">
+                                <ul class="uppercase">
+                                    <li>country</li>
+                                    <li>year</li>
+                                    <li>genre</li>
+                                    <li>actors</li>
+                                </ul>
+                                <ul>
+                                    <li>USA</li>
+                                    <li>2016</li>
+                                    <li>Fantasy</li>
+                                    <li>Aksel Hennie, Chiwetel Ejiofor, Jeff Daniels, Jessica Chastain, Kate Mara, Kristen Wiig, Matt Damon, Michael Peña, Sean Bean, Sebastian Stan</li>
+                                </ul>
+                            </div>
+                            <div class="film-card__inputs">
+                                <input type="button" value="Delete" class="delete">
+                                <input type="button" value="Edit" class="edit">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="comments">
-                    <input type="button" class="comment_btn" value="Comments: 3 ^">
-                    <div class="comment">
-                        <p>Test comment 1</p>
-                        <p>Test comment 2</p>
+                    <div class="comments">
+                        <input type="button" class="comment_btn" value="Comments: 3 ^">
+                        <div class="comment_block hide">
+                            <div class="comment">
+                                <p>Test comment 1</p>
+                                <p>Test comment 2</p>
+                            </div>
+                            <input type="text" name="comment" placeholder="Add your comment">
+                            <input type="submit" value="Add" class="add-comment__btn">
+                        </div>
                     </div>
-                    <input type="text" name="comment" placeholder="Add your comment">
-                    <input type="submit" value="Add">
                 </div>
             </div>
         </div>
